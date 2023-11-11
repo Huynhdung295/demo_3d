@@ -53,6 +53,7 @@
     <img src="images/robot.png">
     <div class="box_chat_robot"></div>
   </div>
+  <div class="btn_change_room">Change room</div>
   <script src="scripts/controls.js"></script>
   <script src="scripts/rotate.js"></script>
   <script>
@@ -74,6 +75,16 @@
           boxChatRobot.innerHTML = '';
         }
       });
+
+      // When click on btn change room, change room (class side add side_2)
+      const btnChangeRoom = document.querySelector('.btn_change_room');
+      const side = document.querySelectorAll('.side');
+
+      btnChangeRoom.addEventListener('click', () => {
+        side.forEach((item) => {
+          item.classList.toggle('side_2');
+        })
+      })
     
       
 

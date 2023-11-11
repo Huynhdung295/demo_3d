@@ -24,8 +24,17 @@
   transform: translateX(99.9%) rotateY(-90deg);
 }
 
+.side.side_2 {
+  background-image: url('../images/room.png');
+}
+
 .cube.grid .side {
   background-image: url('../images/grid.jpg'), url('../images/environment.jpg');
+  background-blend-mode: lighten;
+}
+
+.cube.grid .side.side_2 {
+  background-image: url('../images/grid.jpg'), url('../images/room.png');
   background-blend-mode: lighten;
 }
 
